@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Institute for Psychic Herbalism</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f6f1e7;
+      color: #2d2a26;
+      font-family: Georgia, serif;
+      line-height: 1.8;
+    }
+
+    nav {
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 18px;
+    }
+
+    nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #5c6b56;
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto 100px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 52px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 50px;
+      color: #5c6b56;
+      font-size: 20px;
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto 50px auto;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    p {
+      font-size: 21px;
+      margin-bottom: 28px;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 24px;
+      color: #5c6b56;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6e675f;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="program.html">Program</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="services.html">Services</a>
+  </nav>
+
+  <div class="container">
+
+    <h1>About</h1>
+
+    <div class="subtitle">
+      Spiritual relationship with the intelligence of the living world.
+    </div>
+
+    <!-- Replace the image file name below with your own photo -->
+    <img src="images/emily1.jpg" alt="Emily in nature" class="portrait">
+
+    <p>
+      While sitting in the garden within the Emerald Valley forest, Emily discovered a unique and repeatable method for spiritually connecting with plant medicine. What began as a deeply personal and intuitive experience slowly revealed itself to be something far greater — a doorway into direct relationship with the consciousness, wisdom, and energetic signatures of medicinal plants.
+    </p>
+
+    <p>
+      At first, she kept the practice private. The experiences felt sacred, difficult to explain, and unlike anything she had encountered in traditional herbal education. But during her second year at the California School of Herbal Studies, Emily was asked to teach a class. With hesitation and sincerity, she shared the method she had discovered.
+    </p>
+
+    <p>
+      To her surprise, the practice did not only work for her. Again and again, students reported profound experiences of connection, clarity, emotional healing, intuitive awakening, and direct communication with the plant world. What Emily had quietly cultivated in solitude began unfolding as a living body of work.
+    </p>
+
+    <p>
+      Following the birth of her first daughter, Emily continued teaching intimate classes and circles devoted to psychic herbalism, spiritual perception, intuitive development, and the sacred intelligence within nature. Over time, these teachings evolved into a larger program and eventually into the founding of the Institute for Psychic Herbalism.
+    </p>
+
+    <p>
+      The Institute exists as a space for the spiritual study of plant wisdom and medicine — a meeting place between herbalism, intuition, energetic sensitivity, mysticism, embodiment, and reverence for the living earth. It is devoted not only to learning about plants, but to learning with them.
+    </p>
+
+    <p>
+      Emily's work invites students into a slower and more relational way of knowing. One rooted in observation, inner listening, spiritual attunement, and the remembrance that the natural world is alive with intelligence.
+    </p>
+
+    <div class="quote">
+      “The plants are not merely substances to consume,
+      but intelligences to enter relationship with.”
+    </div>
+
+  </div>
+
+  <footer>
+    © Institute for Psychic Herbalism
+  </footer>
+
+</body>
+</html>
