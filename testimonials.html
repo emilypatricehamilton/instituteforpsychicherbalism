@@ -95,11 +95,62 @@
       color: #7a726c;
     }
 
+.site-header {
+  width: 100%;
+  background-color: #f6f3ee;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: #2f2a26;
+  font-size: 1.1rem;
+  letter-spacing: 0.4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5d554e;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.65;
+}
     @media (max-width: 850px) {
       .video-grid {
         grid-template-columns: 1fr;
       }
+.nav-container {
+  flex-direction: column;
+  gap: 16px;
+}
 
+.nav-links {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+}
       .hero h1 {
         font-size: 2.3rem;
       }
@@ -113,6 +164,24 @@
 </head>
 
 <body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        Institute for Psychic Herbalism
+      </a>
+
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </header>
 
   <section class="container">
 
