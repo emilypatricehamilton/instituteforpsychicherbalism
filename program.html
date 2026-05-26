@@ -403,87 +403,29 @@
 
       </div>
 
-      <div class="button-container">
-
-        <a class="button"
-           href="mailto:emily@instituteforpsychicherbalism.org">
-          Inquire About the Program
-        </a>
-
       </div>
             </div>
 
-.waitlist-section {
-  max-width: 650px;
-  margin: 90px auto 0;
-  text-align: center;
-  padding-top: 60px;
-  border-top: 1px solid rgba(92,107,86,0.25);
-}
+<div class="waitlist-section">
 
-.waitlist-title {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 18px;
-  color: #4e5a49;
-}
+  <h1 class="waitlist-title">Join Us!</h1>
 
-.waitlist-text {
-  font-size: 1.1rem;
-  color: #5d554e;
-  margin-bottom: 30px;
-  line-height: 1.7;
-}
+  <p class="waitlist-text">
+    Would you like to be notified when enrollment opens for the next Psychic Herbalism program?
+    Enter your name and email below and we’ll send you a message when the next circle opens.
+  </p>
 
-/* FORM LAYOUT */
-.waitlist-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: center;
-}
+  <form class="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-/* INPUT FIELDS */
-.waitlist-form input {
-  width: 100%;
-  max-width: 420px;
-  height: 46px;
-  padding: 0 14px;
-  border: 1px solid rgba(0,0,0,0.18);
-  border-radius: 10px;
-  font-size: 1rem;
-  font-family: Georgia, serif;
-  background: rgba(255,255,255,0.75);
-  color: #2f2a26;
-  outline: none;
-}
+    <input type="text" name="name" placeholder="Your name" required>
 
-/* subtle focus state */
-.waitlist-form input:focus {
-  border-color: #5c6b56;
-}
+    <input type="email" name="email" placeholder="Your email" required>
 
-/* BUTTON MATCHES SITE STYLE */
-.waitlist-form button {
-  display: inline-block;
-  padding: 14px 28px;
-  background-color: #5c6b56;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-family: Georgia, serif;
-  letter-spacing: 0.3px;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  margin-top: 6px;
-}
+    <button type="submit">Join the List</button>
 
-.waitlist-form button:hover {
-  opacity: 0.85;
-}
+  </form>
 
-  </section>
+</div>
 
   <footer>
     © 2026 Institute for Psychic Herbalism
