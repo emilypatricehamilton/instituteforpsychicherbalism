@@ -25,7 +25,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Navigation */
+    /* NAVIGATION */
 
     .site-header {
       width: 100%;
@@ -73,7 +73,7 @@
       opacity: 0.6;
     }
 
-    /* Main Layout */
+    /* LAYOUT */
 
     .container {
       width: 90%;
@@ -98,7 +98,6 @@
     .hero h1 {
       font-size: 3.4rem;
       font-weight: 400;
-      letter-spacing: 0.5px;
       margin-bottom: 20px;
     }
 
@@ -124,10 +123,9 @@
     .section-title {
       margin-top: 90px;
       margin-bottom: 34px;
-      font-size: 2.3rem;
+      font-size: 2.2rem;
       color: #5c6b56;
       font-weight: 400;
-      letter-spacing: 0.3px;
     }
 
     .week-block {
@@ -137,47 +135,77 @@
     }
 
     .week-title {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       margin-bottom: 18px;
       color: #4e5a49;
       font-weight: 400;
-      line-height: 1.5;
     }
 
     .testimonial-link {
       text-align: center;
       margin-top: 70px;
-      font-size: 1.12rem;
+      font-size: 1.1rem;
     }
 
     .testimonial-link a {
       color: #5c6b56;
       text-decoration: none;
-      transition: opacity 0.25s ease;
     }
 
-    .testimonial-link a:hover {
-      opacity: 0.7;
-    }
+    /* WAITLIST */
 
-    .button-container {
+    .waitlist-section {
+      max-width: 650px;
+      margin: 100px auto 0;
       text-align: center;
-      margin-top: 50px;
+      padding-top: 60px;
+      border-top: 1px solid rgba(92,107,86,0.25);
     }
 
-    .button {
-      display: inline-block;
-      padding: 15px 32px;
+    .waitlist-title {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 18px;
+      color: #4e5a49;
+    }
+
+    .waitlist-text {
+      font-size: 1.1rem;
+      color: #5d554e;
+      margin-bottom: 30px;
+    }
+
+    .waitlist-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .waitlist-form input {
+      width: 100%;
+      max-width: 420px;
+      height: 46px;
+      padding: 0 14px;
+      border: 1px solid rgba(0,0,0,0.18);
+      border-radius: 10px;
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      background: rgba(255,255,255,0.75);
+    }
+
+    .waitlist-form button {
+      padding: 14px 28px;
       background-color: #5c6b56;
       color: white;
-      text-decoration: none;
-      border-radius: 12px;
+      border: none;
+      border-radius: 10px;
+      font-family: Georgia, serif;
       font-size: 1rem;
-      letter-spacing: 0.3px;
-      transition: opacity 0.25s ease;
+      cursor: pointer;
     }
 
-    .button:hover {
+    .waitlist-form button:hover {
       opacity: 0.85;
     }
 
@@ -188,50 +216,28 @@
       color: #7a726c;
     }
 
-    /* Mobile */
+    /* MOBILE */
 
     @media (max-width: 850px) {
 
       .nav-container {
         flex-direction: column;
         gap: 18px;
-        padding: 20px 0;
       }
 
       .nav-links {
         flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
-        text-align: center;
-      }
-
-      .container {
-        width: 94%;
-        padding: 70px 0 90px;
       }
 
       .hero h1 {
         font-size: 2.5rem;
       }
 
-      .subtitle {
-        font-size: 1.05rem;
-      }
-
-      .content p {
-        font-size: 1.05rem;
-      }
-
-      .section-title {
-        font-size: 2rem;
-      }
-
-      .week-title {
-        font-size: 1.35rem;
-      }
-
-      .hero-image {
-        margin-bottom: 50px;
+      .container {
+        width: 94%;
+        padding: 70px 0 90px;
       }
     }
 
@@ -240,7 +246,7 @@
 
 <body>
 
-  <!-- Navigation -->
+  <!-- NAV -->
 
   <header class="site-header">
     <div class="nav-container">
@@ -260,172 +266,89 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- CONTENT -->
 
   <section class="container">
 
-    <img src="Images/mimosa.jpeg"
-         alt="Psychic Herbalism Program"
-         class="hero-image">
+    <img src="Images/mimosa.jpeg" class="hero-image" alt="Program">
 
     <div class="hero">
-
       <h1>Psychic Herbalism</h1>
-
       <div class="subtitle">
-        A 12-week immersion into energetic healing,
-        spiritual perception, and relationship with plant consciousness.
+        A 12-week immersion into energetic healing, spiritual perception, and plant consciousness.
       </div>
-
     </div>
 
     <div class="content">
 
       <p>
-        The <em>Psychic Herbalism</em> program begins with the cultivation
-        of a deep embodied relationship with one’s own energy. Students are guided
-        through the creation of a series of energetic healing tools and practices
-        designed to restore clarity, strengthen clairvoyance,
-        and transform the energy body.
+        The <em>Psychic Herbalism</em> program begins with the cultivation of a deep embodied relationship with one’s own energy...
       </p>
 
       <p>
-        As the program unfolds, we begin spiritually connecting with the consciousness
-        and medicine of specific plants and mushrooms. While attuned to the energetic
-        frequency of each medicine, students learn to utilize these tools for healing,
-        intuitive development, insight, and spiritual transformation.
+        As the program unfolds, we begin spiritually connecting with plants and mushrooms...
       </p>
 
       <p>
-        No physical plants are required for this work.
-        The connection is entirely energetic — an experience that reveals
-        the profound relationship between spirit, consciousness,
-        and the living intelligence of the natural world.
+        No physical plants are required for this work...
       </p>
 
       <p>
-        Through direct experience, students awaken a deeper trust
-        in their innate sensitivity, intuition,
-        and capacity for spiritual perception.
+        Through direct experience, students awaken deeper trust in intuition and perception.
       </p>
 
-      <div class="section-title">
-        Program Journey
+      <div class="section-title">Program Journey</div>
+
+      <div class="week-block">
+        <div class="week-title">Weeks 1–3 · Building the Energetic Foundation</div>
+        <p>Foundational energetic toolkit, embodiment, grounding, clarity...</p>
       </div>
 
       <div class="week-block">
-
-        <div class="week-title">
-          Weeks 1–3 · Building the Energetic Foundation
-        </div>
-
-        <p>
-          In the first three weeks of the program,
-          we focus on developing a foundational energetic toolkit.
-          Through direct experience, students learn a host of energetic healing tools
-          while discovering how each practice uniquely works for them.
-        </p>
-
-        <p>
-          This phase of the program is devoted to embodiment,
-          grounding, energetic awareness,
-          and creating safety and clarity within the energy body
-          before moving into spiritual connection with plant medicine.
-        </p>
-
+        <div class="week-title">Weeks 4–8 · Vibrational Plant & Mushroom Medicine</div>
+        <p>Plant allies, body systems, intuitive development...</p>
       </div>
 
       <div class="week-block">
-
-        <div class="week-title">
-          Weeks 4–8 · Vibrational Plant & Mushroom Medicine
-        </div>
-
-        <p>
-          In the following five weeks, students begin spiritually connecting
-          with plants and mushrooms that support various body systems
-          including the skin, nervous system, heart,
-          muscle and skeletal systems, and immune system.
-        </p>
-
-        <p>
-          Each medicine carries its own energetic signature and frequency.
-          Through these experiences, students begin developing
-          a unique “vibrational medicine kit” while deepening
-          their intuitive relationship with the consciousness
-          of each plant ally.
-        </p>
-
+        <div class="week-title">Weeks 9–12 · Clairvoyance Through Time & Space</div>
+        <p>Time perception, clairvoyance development, energetic vision...</p>
       </div>
 
-      <div class="week-block">
-
-        <div class="week-title">
-          Weeks 9–12 · Clairvoyance Through Time & Space
-        </div>
-
-        <p>
-          In the final four weeks, we begin exploring
-          how different medicines have been utilized throughout time.
-          This portion of the program focuses deeply
-          on the development of clairvoyance and the ability
-          to perceive energy across time and space.
-        </p>
-
-        <p>
-          This stage of the work often surprises students.
-          It can feel like opening a gift that has quietly been waiting
-          within them all along. Many students who previously doubted
-          their clairvoyant ability are amazed by both the clarity
-          of what they perceive and how natural the experience feels.
-        </p>
-
-      </div>
-
-      <p>
-        This experience is completely unique,
-        and it is an honor to share this work with the world.
-      </p>
-
-      <p>
-        All classes presently take place live on Zoom.
-      </p>
-
-      <p>
-        The next program begins in Fall 2026.
-      </p>
+      <p>This experience is completely unique.</p>
+      <p>All classes are live on Zoom.</p>
+      <p>The next program begins Fall 2026.</p>
 
       <div class="testimonial-link">
-
-        <a href="testimonials.html">
-          Listen to the words of previous students here →
-        </a>
-
+        <a href="testimonials.html">Listen to student testimonials →</a>
       </div>
 
-      </div>
-            </div>
+    </div>
 
-<div class="waitlist-section">
+    <!-- WAITLIST -->
 
-  <h1 class="waitlist-title">Join Us!</h1>
+    <div class="waitlist-section">
 
-  <p class="waitlist-text">
-    Would you like to be notified when enrollment opens for the next Psychic Herbalism program?
-    Enter your name and email below and we’ll send you a message when the next circle opens.
-  </p>
+      <h2 class="waitlist-title">Join the Interest List</h2>
 
-  <form class="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <p class="waitlist-text">
+        Would you like to be notified when enrollment opens for the next cycle?
+        Enter your name and email below.
+      </p>
 
-    <input type="text" name="name" placeholder="Your name" required>
+      <form class="waitlist-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST">
 
-    <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
 
-    <button type="submit">Join the List</button>
+        <button type="submit">Join the List</button>
 
-  </form>
+      </form>
 
-</div>
+    </div>
+
+  </section>
 
   <footer>
     © 2026 Institute for Psychic Herbalism
