@@ -1,131 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psychic Herbalism & Spiritual Anatomy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Program | Institute for Psychic Herbalism</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
 
   <style>
 
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f6f1e7;
-      color: #2d2a26;
+    }
+
+    body {
+      background-color: #f6f3ee;
+      color: #2f2a26;
       font-family: Georgia, serif;
       line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
     }
 
-    nav {
-      text-align: center;
-      padding: 28px 20px;
-      font-size: 18px;
+    /* Navigation */
+
+    .site-header {
+      width: 100%;
+      background-color: rgba(246, 243, 238, 0.96);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
     }
 
-    nav a {
-      margin: 0 18px;
+    .nav-container {
+      width: 90%;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
       text-decoration: none;
-      color: #5c6b56;
-      font-family: Georgia, serif;
-      transition: opacity 0.2s ease;
+      color: #2f2a26;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
     }
 
-    nav a:hover {
-      opacity: 0.7;
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #5d554e;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: opacity 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* Main Layout */
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 100px 0 120px;
     }
 
     .hero-image {
       width: 100%;
-      max-height: 520px;
-      object-fit: cover;
+      max-width: 900px;
       display: block;
+      margin: 0 auto 70px;
+      box-shadow: 0 14px 34px rgba(0,0,0,0.08);
     }
 
-    .container {
-      max-width: 850px;
-      margin: 70px auto 100px auto;
-      padding: 20px;
-    }
-
-    h1 {
+    .hero {
       text-align: center;
-      font-size: 52px;
+      margin-bottom: 70px;
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
       margin-bottom: 20px;
-      letter-spacing: 1px;
     }
 
     .subtitle {
-      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.12rem;
+      color: #5d554e;
       font-style: italic;
-      color: #5c6b56;
-      font-size: 20px;
-      margin-bottom: 55px;
     }
 
-    p {
-      font-size: 21px;
-      margin-bottom: 30px;
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .content p {
+      margin-bottom: 34px;
+      font-size: 1.12rem;
+      color: #3d3834;
     }
 
     .section-title {
-      margin-top: 70px;
-      margin-bottom: 24px;
-      font-size: 34px;
+      margin-top: 90px;
+      margin-bottom: 34px;
+      font-size: 2.3rem;
       color: #5c6b56;
+      font-weight: 400;
+      letter-spacing: 0.3px;
     }
 
     .week-block {
-      margin-bottom: 45px;
-      padding-left: 22px;
-      border-left: 2px solid #b8b0a5;
+      margin-bottom: 55px;
+      padding-left: 28px;
+      border-left: 1px solid rgba(92,107,86,0.35);
     }
 
     .week-title {
-      font-size: 26px;
-      margin-bottom: 12px;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
       color: #4e5a49;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .testimonial-link {
+      text-align: center;
+      margin-top: 70px;
+      font-size: 1.12rem;
+    }
+
+    .testimonial-link a {
+      color: #5c6b56;
+      text-decoration: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .testimonial-link a:hover {
+      opacity: 0.7;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 50px;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 28px;
+      padding: 15px 32px;
       background-color: #5c6b56;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
-      transition: opacity 0.2s ease;
-      margin-top: 20px;
-      font-size: 18px;
+      border-radius: 12px;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: opacity 0.25s ease;
     }
 
     .button:hover {
       opacity: 0.85;
     }
 
-    .quote {
-      font-style: italic;
-      text-align: center;
-      margin-top: 80px;
-      font-size: 24px;
-      color: #5c6b56;
-    }
-
-    .testimonial-link {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 21px;
-    }
-
-    .testimonial-link a {
-      color: #5c6b56;
-      text-decoration: none;
-    }
-
     footer {
       text-align: center;
-      padding: 40px 20px;
-      color: #6e675f;
-      font-size: 15px;
+      padding: 55px 20px;
+      font-size: 0.95rem;
+      color: #7a726c;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 850px) {
+
+      .nav-container {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .container {
+        width: 94%;
+        padding: 70px 0 90px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.05rem;
+      }
+
+      .content p {
+        font-size: 1.05rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .week-title {
+        font-size: 1.35rem;
+      }
+
+      .hero-image {
+        margin-bottom: 50px;
+      }
     }
 
   </style>
@@ -133,117 +240,184 @@
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="program.html">Program</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="readings.html">Readings</a>
-  </nav>
+  <!-- Navigation -->
 
-  <img src="Images/mimosa.jpeg" alt="Psychic Herbalism Program" class="hero-image">
+  <header class="site-header">
+    <div class="nav-container">
 
-  <div class="container">
+      <a href="index.html" class="logo-text">
+        Institute for Psychic Herbalism
+      </a>
 
-    <h1>Psychic Herbalism</h1>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="readings.html">Readings</a>
+      </nav>
 
-    <link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="favicon.png">
+    </div>
+  </header>
 
-    <div class="subtitle">
-      A 12-week immersion into energetic healing, spiritual perception, and relationship with plant consciousness.
+  <!-- Main Content -->
+
+  <section class="container">
+
+    <img src="Images/mimosa.jpeg"
+         alt="Psychic Herbalism Program"
+         class="hero-image">
+
+    <div class="hero">
+
+      <h1>Psychic Herbalism</h1>
+
+      <div class="subtitle">
+        A 12-week immersion into energetic healing,
+        spiritual perception, and relationship with plant consciousness.
+      </div>
+
     </div>
 
-    <p>
-      The <em>Psychic Herbalism</em> program begins with the cultivation of a deep embodied relationship with one’s own energy. Students are guided through the creation of a series of energetic healing tools and practices designed to restore clarity, strengthen clairvoyance, and transform the energy body.
-    </p>
+    <div class="content">
 
-    <p>
-      As the program unfolds, we begin spiritually connecting with the consciousness and medicine of specific plants and mushrooms. While attuned to the energetic frequency of each medicine, students learn to utilize these tools for healing, intuitive development, insight, and spiritual transformation.
-    </p>
+      <p>
+        The <em>Psychic Herbalism</em> program begins with the cultivation
+        of a deep embodied relationship with one’s own energy. Students are guided
+        through the creation of a series of energetic healing tools and practices
+        designed to restore clarity, strengthen clairvoyance,
+        and transform the energy body.
+      </p>
 
-    <p>
-      No physical plants are required for this work. The connection is entirely energetic — an experience that reveals the profound relationship between spirit, consciousness, and the living intelligence of the natural world.
-    </p>
+      <p>
+        As the program unfolds, we begin spiritually connecting with the consciousness
+        and medicine of specific plants and mushrooms. While attuned to the energetic
+        frequency of each medicine, students learn to utilize these tools for healing,
+        intuitive development, insight, and spiritual transformation.
+      </p>
 
-    <p>
-      Through direct experience, students awaken a deeper trust in their innate sensitivity, intuition, and capacity for spiritual perception.
-    </p>
+      <p>
+        No physical plants are required for this work.
+        The connection is entirely energetic — an experience that reveals
+        the profound relationship between spirit, consciousness,
+        and the living intelligence of the natural world.
+      </p>
 
-    <div class="section-title">
-      Program Journey
-    </div>
+      <p>
+        Through direct experience, students awaken a deeper trust
+        in their innate sensitivity, intuition,
+        and capacity for spiritual perception.
+      </p>
 
-    <div class="week-block">
-      <div class="week-title">
-        Weeks 1–3 · Building the Energetic Foundation
+      <div class="section-title">
+        Program Journey
+      </div>
+
+      <div class="week-block">
+
+        <div class="week-title">
+          Weeks 1–3 · Building the Energetic Foundation
+        </div>
+
+        <p>
+          In the first three weeks of the program,
+          we focus on developing a foundational energetic toolkit.
+          Through direct experience, students learn a host of energetic healing tools
+          while discovering how each practice uniquely works for them.
+        </p>
+
+        <p>
+          This phase of the program is devoted to embodiment,
+          grounding, energetic awareness,
+          and creating safety and clarity within the energy body
+          before moving into spiritual connection with plant medicine.
+        </p>
+
+      </div>
+
+      <div class="week-block">
+
+        <div class="week-title">
+          Weeks 4–8 · Vibrational Plant & Mushroom Medicine
+        </div>
+
+        <p>
+          In the following five weeks, students begin spiritually connecting
+          with plants and mushrooms that support various body systems
+          including the skin, nervous system, heart,
+          muscle and skeletal systems, and immune system.
+        </p>
+
+        <p>
+          Each medicine carries its own energetic signature and frequency.
+          Through these experiences, students begin developing
+          a unique “vibrational medicine kit” while deepening
+          their intuitive relationship with the consciousness
+          of each plant ally.
+        </p>
+
+      </div>
+
+      <div class="week-block">
+
+        <div class="week-title">
+          Weeks 9–12 · Clairvoyance Through Time & Space
+        </div>
+
+        <p>
+          In the final four weeks, we begin exploring
+          how different medicines have been utilized throughout time.
+          This portion of the program focuses deeply
+          on the development of clairvoyance and the ability
+          to perceive energy across time and space.
+        </p>
+
+        <p>
+          This stage of the work often surprises students.
+          It can feel like opening a gift that has quietly been waiting
+          within them all along. Many students who previously doubted
+          their clairvoyant ability are amazed by both the clarity
+          of what they perceive and how natural the experience feels.
+        </p>
+
       </div>
 
       <p>
-        In the first three weeks of the program, we focus on developing a foundational energetic toolkit. Through direct experience, students learn a host of energetic healing tools while discovering how each practice uniquely works for them.
+        This experience is completely unique,
+        and it is an honor to share this work with the world.
       </p>
 
       <p>
-        This phase of the program is devoted to embodiment, grounding, energetic awareness, and creating safety and clarity within the energy body before moving into spiritual connection with plant medicine.
-      </p>
-    </div>
-
-    <div class="week-block">
-      <div class="week-title">
-        Weeks 4–8 · Vibrational Plant & Mushroom Medicine
-      </div>
-
-      <p>
-        In the following five weeks, students begin spiritually connecting with plants and mushrooms that support various body systems including the skin, nervous system, heart, muscle and skeletal systems, and immune system.
-      </p>
-
-      <p>
-        Each medicine carries its own energetic signature and frequency. Through these experiences, students begin developing a unique “vibrational medicine kit” while deepening their intuitive relationship with the consciousness of each plant ally.
-      </p>
-    </div>
-
-    <div class="week-block">
-      <div class="week-title">
-        Weeks 9–12 · Clairvoyance Through Time & Space
-      </div>
-
-      <p>
-        In the final four weeks, we begin exploring how different medicines have been utilized throughout time. This portion of the program focuses deeply on the development of clairvoyance and the ability to perceive energy across time and space.
-      </p>
-
-      <p>
-        This stage of the work often surprises students. It can feel like opening a gift that has quietly been waiting within them all along. Many students who previously doubted their clairvoyant ability are amazed by both the clarity of what they perceive and how natural the experience feels.
-      </p>
-    </div>
-
-    <p>
-      This experience is completely unique, and it is an honor to share this work with the world.
-    </p>
-     
-      <p>   
         All classes presently take place live on Zoom.
       </p>
-    
-     <p>   
-     The next program begins in Fall 2026.
-     </p>
-    
-    <div class="testimonial-link">
-      <a href="testimonials.html">
-        Listen to the words of previous students here →
-      </a>
+
+      <p>
+        The next program begins in Fall 2026.
+      </p>
+
+      <div class="testimonial-link">
+
+        <a href="testimonials.html">
+          Listen to the words of previous students here →
+        </a>
+
+      </div>
+
+      <div class="button-container">
+
+        <a class="button"
+           href="mailto:emily@instituteforpsychicherbalism.org">
+          Inquire About the Program
+        </a>
+
+      </div>
+
     </div>
 
-    <div style="text-align:center;">
-      <a class="button"
-         href="mailto:emily@instituteforpsychicherbalism.org">
-        Inquire About the Program
-      </a>
-    </div>
-
+  </section>
 
   <footer>
-    © Institute for Psychic Herbalism
+    © 2026 Institute for Psychic Herbalism
   </footer>
 
 </body>
