@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Readings | Institute for Psychic Herbalism</title>
 
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -16,7 +21,8 @@
       font-family: Georgia, serif;
       background-color: #f6f3ee;
       color: #2f2a26;
-      line-height: 1.75;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
     }
 
     /* Navigation */
@@ -67,76 +73,81 @@
       opacity: 0.6;
     }
 
-    /* Main Content */
+    /* Main Layout */
 
     .container {
       width: 90%;
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 100px 0;
+      padding: 110px 0 120px;
     }
 
     .hero {
       text-align: center;
-      margin-bottom: 70px;
+      margin-bottom: 90px;
     }
 
     .hero h1 {
-      font-size: 3.2rem;
+      font-size: 3.4rem;
       font-weight: 400;
-      margin-bottom: 20px;
       letter-spacing: 0.5px;
+      margin-bottom: 24px;
     }
 
     .hero p {
-      font-size: 1.1rem;
-      color: #5d554e;
       max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.12rem;
+      color: #5d554e;
+    }
+
+    .content {
+      max-width: 760px;
       margin: 0 auto;
     }
 
-    .content-section {
-      background: rgba(255,255,255,0.7);
-      padding: 55px;
-      border-radius: 24px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
-    }
-
-    .content-section p {
-      margin-bottom: 28px;
-      font-size: 1.08rem;
+    .content p {
+      margin-bottom: 34px;
+      font-size: 1.12rem;
       color: #3d3834;
     }
 
-    .highlight {
-      margin-top: 50px;
-      padding-top: 40px;
+    .content em {
+      font-style: italic;
+    }
+
+    .reading-section {
+      margin-top: 90px;
+      padding-top: 55px;
       border-top: 1px solid rgba(0,0,0,0.08);
       text-align: center;
     }
 
-    .highlight h2 {
-      font-size: 1.7rem;
+    .reading-section h2 {
+      font-size: 2rem;
       font-weight: 400;
+      margin-bottom: 24px;
+      letter-spacing: 0.3px;
+    }
+
+    .reading-section p {
       margin-bottom: 18px;
     }
 
-    .highlight p {
-      margin-bottom: 14px;
-    }
-
     .price {
-      font-size: 1.2rem;
-      letter-spacing: 0.4px;
+      font-size: 1.15rem;
+      letter-spacing: 0.3px;
       color: #2f2a26;
     }
 
     footer {
       text-align: center;
-      padding: 50px 20px;
+      padding: 55px 20px;
       font-size: 0.95rem;
       color: #7a726c;
     }
+
+    /* Mobile */
 
     @media (max-width: 850px) {
 
@@ -153,19 +164,33 @@
         text-align: center;
       }
 
-      .hero h1 {
-        font-size: 2.4rem;
-      }
-
       .container {
         width: 94%;
-        padding: 70px 0;
+        padding: 70px 0 90px;
       }
 
-      .content-section {
-        padding: 36px 28px;
+      .hero {
+        margin-bottom: 60px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.05rem;
+      }
+
+      .content p {
+        font-size: 1.05rem;
+      }
+
+      .reading-section {
+        margin-top: 70px;
+        padding-top: 45px;
       }
     }
+
   </style>
 </head>
 
@@ -197,30 +222,34 @@
 
     <div class="hero">
       <h1>Receive a Reading</h1>
-      
-<link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="favicon.png">
-      
+
       <p>
-        Psychic work rooted in embodiment, spiritual clarity, and the wisdom of the soul.
+        Psychic work rooted in embodiment, spiritual clarity,
+        and the wisdom of the soul.
       </p>
     </div>
 
+    <div class="content">
+
       <p>
-        While many people associate the word <em>psychic</em> with predicting the future,
-        the interpretation here is quite different.
+        While many people associate the word <em>psychic</em>
+        with predicting the future, the interpretation here
+        is quite different.
       </p>
 
       <p>
-        The etymology of the word psychic means <em>“of the soul.”</em>
-        A reading is not about handing someone answers or creating dependency.
-        Rather, it is a process of helping someone recognize and reconnect
-        with their own unique spiritual frequency.
+        The etymology of the word psychic means
+        <em>“of the soul.”</em>
+        A reading is not about handing someone answers
+        or creating dependency. Rather, it is a process
+        of helping someone recognize and reconnect with
+        their own unique spiritual frequency.
       </p>
 
       <p>
-        Through receiving a reading, many people experience a deeper sense of embodiment,
-        greater spiritual clarity, emotional insight, increased ease in life,
+        Through receiving a reading, many people experience
+        a deeper sense of embodiment, greater spiritual clarity,
+        emotional insight, increased ease in life,
         and a renewed relationship with their own intuition.
       </p>
 
@@ -230,12 +259,13 @@
       </p>
 
       <p>
-        Students who commit to ongoing study through the Institute for Psychic Herbalism
-        are given opportunities to practice and refine their reading skills
-        in a grounded, supportive environment.
+        Students who commit to ongoing study through the
+        Institute for Psychic Herbalism are given opportunities
+        to practice and refine their reading skills in a grounded,
+        supportive environment.
       </p>
 
-      <div class="highlight">
+      <div class="reading-section">
 
         <h2>Student Readings</h2>
 
