@@ -1,145 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>About | Institute for Psychic Herbalism</title>
 
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
   <style>
-    body {
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f6f1e7;
-      color: #2d2a26;
+    }
+
+    body {
+      background-color: #f6f3ee;
+      color: #2f2a26;
       font-family: Georgia, serif;
       line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
     }
 
-    nav {
-      text-align: center;
-      padding: 28px 20px;
-      font-size: 18px;
+    /* Navigation */
+
+    .site-header {
+      width: 100%;
+      background-color: rgba(246, 243, 238, 0.96);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
     }
 
-    nav a {
-      margin: 0 18px;
+    .nav-container {
+      width: 90%;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
       text-decoration: none;
-      color: #5c6b56;
-      transition: opacity 0.2s ease;
+      color: #2f2a26;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
     }
 
-    nav a:hover {
-      opacity: 0.7;
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
     }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #5d554e;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: opacity 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* Main Layout */
 
     .container {
-      max-width: 850px;
-      margin: 0 auto 100px auto;
-      padding: 20px;
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 110px 0 120px;
     }
 
-    h1 {
+    .hero {
       text-align: center;
-      font-size: 52px;
+      margin-bottom: 70px;
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
       margin-bottom: 20px;
-      letter-spacing: 1px;
     }
 
     .subtitle {
-      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.12rem;
+      color: #5d554e;
       font-style: italic;
-      margin-bottom: 50px;
-      color: #5c6b56;
-      font-size: 20px;
     }
 
     .portrait {
       width: 100%;
-      max-width: 500px;
+      max-width: 520px;
       display: block;
-      margin: 0 auto 50px auto;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin: 0 auto 70px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
     }
 
-    p {
-      font-size: 21px;
-      margin-bottom: 28px;
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .content p {
+      margin-bottom: 34px;
+      font-size: 1.12rem;
+      color: #3d3834;
     }
 
     .quote {
-      font-style: italic;
       text-align: center;
-      margin-top: 60px;
-      font-size: 24px;
+      margin-top: 90px;
+      font-size: 1.4rem;
+      font-style: italic;
       color: #5c6b56;
+      line-height: 1.7;
     }
 
     footer {
       text-align: center;
-      padding: 40px 20px;
-      color: #6e675f;
-      font-size: 15px;
+      padding: 55px 20px;
+      font-size: 0.95rem;
+      color: #7a726c;
     }
+
+    /* Mobile */
+
+    @media (max-width: 850px) {
+
+      .nav-container {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .container {
+        width: 94%;
+        padding: 70px 0 90px;
+      }
+
+      .hero {
+        margin-bottom: 55px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.05rem;
+      }
+
+      .portrait {
+        margin-bottom: 50px;
+      }
+
+      .content p {
+        font-size: 1.05rem;
+      }
+
+      .quote {
+        font-size: 1.2rem;
+        margin-top: 70px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="program.html">Program</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="readings.html">Readings</a>
-  </nav>
+  <!-- Navigation -->
 
-  <div class="container">
+  <header class="site-header">
+    <div class="nav-container">
 
-    <h1>About</h1>
-    
-<link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="favicon.png">
-    
-    <div class="subtitle">
-      Spiritual relationship with the intelligence of the living world.
+      <a href="index.html" class="logo-text">
+        Institute for Psychic Herbalism
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="readings.html">Readings</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main Content -->
+
+  <section class="container">
+
+    <div class="hero">
+
+      <h1>About</h1>
+
+      <div class="subtitle">
+        Spiritual relationship with the intelligence of the living world.
+      </div>
+
     </div>
 
     <img src="Images/Emily1.JPG" alt="Emily in nature" class="portrait">
 
-    <p>
-      While sitting in the garden within the Emerald Valley forest, Emily discovered a unique and repeatable method for spiritually connecting with plant medicine. What began as a deeply personal and intuitive experience slowly revealed itself to be something far greater — a doorway into direct relationship with the consciousness, wisdom, and energetic signatures of medicinal plants.
-    </p>
+    <div class="content">
 
-    <p>
-      At first, she kept the practice private. The experiences felt sacred, difficult to explain, and unlike anything she had encountered in traditional herbal education. But during her second year at the California School of Herbal Studies, Emily was asked to teach a class. With hesitation and sincerity, she shared the method she had discovered.
-    </p>
+      <p>
+        While sitting in the garden within the Emerald Valley forest,
+        Emily discovered a unique and repeatable method for spiritually
+        connecting with plant medicine. What began as a deeply personal
+        and intuitive experience slowly revealed itself to be something
+        far greater — a doorway into direct relationship with the consciousness,
+        wisdom, and energetic signatures of medicinal plants.
+      </p>
 
-    <p>
-      To her surprise, the practice did not only work for her. Again and again, students reported profound experiences of connection, clarity, emotional healing, intuitive awakening, and direct communication with the plant world. What Emily had quietly cultivated in solitude began unfolding as a living body of work.
-    </p>
+      <p>
+        At first, she kept the practice private. The experiences felt sacred,
+        difficult to explain, and unlike anything she had encountered in
+        traditional herbal education. But during her second year at the
+        California School of Herbal Studies, Emily was asked to teach a class.
+        With hesitation and sincerity, she shared the method she had discovered.
+      </p>
 
-    <p>
-      Following the birth of her first daughter, Emily continued teaching intimate classes and circles devoted to psychic herbalism, spiritual perception, intuitive development, and the sacred intelligence within nature. Over time, these teachings evolved into a larger program and eventually into the founding of the Institute for Psychic Herbalism.
-    </p>
+      <p>
+        To her surprise, the practice did not only work for her. Again and again,
+        students reported profound experiences of connection, clarity, emotional healing,
+        intuitive awakening, and direct communication with the plant world.
+        What Emily had quietly cultivated in solitude began unfolding as
+        a living body of work.
+      </p>
 
-    <p>
-      The Institute exists as a space for the spiritual study of plant wisdom and medicine — a meeting place between herbalism, intuition, energetic sensitivity, mysticism, embodiment, and reverence for the living earth. It is devoted not only to learning about plants, but to learning with them.
-    </p>
+      <p>
+        Following the birth of her first daughter, Emily continued teaching intimate
+        classes and circles devoted to psychic herbalism, spiritual perception,
+        intuitive development, and the sacred intelligence within nature.
+        Over time, these teachings evolved into a larger program and eventually
+        into the founding of the Institute for Psychic Herbalism.
+      </p>
 
-    <p>
-      Emily's work invites students into a slower and more relational way of knowing. One rooted in observation, inner listening, spiritual attunement, and the remembrance that the natural world is alive with intelligence.
-    </p>
+      <p>
+        The Institute exists as a space for the spiritual study of plant wisdom
+        and medicine — a meeting place between herbalism, intuition,
+        energetic sensitivity, mysticism, embodiment, and reverence for the living earth.
+        It is devoted not only to learning about plants, but to learning with them.
+      </p>
 
-    <div class="quote">
-      “The plants are not merely substances to consume,
-      but intelligences to enter relationship with.”
+      <p>
+        Emily's work invites students into a slower and more relational way of knowing.
+        One rooted in observation, inner listening, spiritual attunement,
+        and the remembrance that the natural world is alive with intelligence.
+      </p>
+
+      <div class="quote">
+        “The plants are not merely substances to consume,<br>
+        but intelligences to enter relationship with.”
+      </div>
+
     </div>
 
-  </div>
+  </section>
 
   <footer>
-    © Institute for Psychic Herbalism
+    © 2026 Institute for Psychic Herbalism
   </footer>
 
 </body>
