@@ -1,82 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Institute for Psychic Herbalism</title>
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
 
   <style>
 
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f6f1e7;
-      color: #2d2a26;
+    }
+
+    body {
+      background-color: #f6f3ee;
+      color: #2f2a26;
       font-family: Georgia, serif;
       line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
     }
 
-    nav {
-      text-align: center;
-      padding: 28px 20px;
-      font-size: 18px;
-    }
+    /* Navigation */
 
-    nav a {
-      margin: 0 18px;
-      text-decoration: none;
-      color: #5c6b56;
-      font-family: Georgia, serif;
-      transition: opacity 0.2s ease;
-    }
-
-    nav a:hover {
-      opacity: 0.7;
-    }
-
-    .hero-image {
+    .site-header {
       width: 100%;
-      max-height: 520px;
-      object-fit: cover;
-      display: block;
+      background-color: rgba(246, 243, 238, 0.96);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
     }
+
+    .nav-container {
+      width: 90%;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-text {
+      text-decoration: none;
+      color: #2f2a26;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #5d554e;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: opacity 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* Main Layout */
 
     .container {
-      max-width: 850px;
-      margin: 70px auto 100px auto;
-      padding: 20px;
-      text-align: center;
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 110px 0 120px;
     }
 
-    h1 {
-      font-size: 52px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
+    .hero {
+      text-align: center;
+      margin-bottom: 90px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+
+    .logo-image {
+      width: 220px;
+      max-width: 75%;
+      margin: 10px auto 40px;
+      display: block;
+      opacity: 0.96;
     }
 
     .subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      color: #5d554e;
       font-style: italic;
-      color: #5c6b56;
-      font-size: 20px;
-      margin-bottom: 50px;
     }
 
-    p {
-      font-size: 21px;
-      margin-bottom: 30px;
-      text-align: left;
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .content p {
+      margin-bottom: 34px;
+      font-size: 1.12rem;
+      color: #3d3834;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 60px;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 28px;
+      padding: 15px 32px;
       background-color: #5c6b56;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
-      transition: opacity 0.2s ease;
-      margin-top: 20px;
-      font-size: 18px;
+      border-radius: 12px;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: opacity 0.25s ease;
     }
 
     .button:hover {
@@ -84,18 +143,67 @@
     }
 
     .quote {
-      font-style: italic;
       text-align: center;
-      margin-top: 70px;
-      font-size: 24px;
+      margin-top: 100px;
+      font-size: 1.45rem;
+      font-style: italic;
       color: #5c6b56;
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
-      padding: 40px 20px;
-      color: #6e675f;
-      font-size: 15px;
+      padding: 55px 20px;
+      font-size: 0.95rem;
+      color: #7a726c;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 850px) {
+
+      .nav-container {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .container {
+        width: 94%;
+        padding: 70px 0 90px;
+      }
+
+      .hero {
+        margin-bottom: 65px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.05rem;
+      }
+
+      .content p {
+        font-size: 1.05rem;
+      }
+
+      .quote {
+        font-size: 1.2rem;
+        margin-top: 70px;
+      }
+
+      .logo-image {
+        width: 180px;
+      }
     }
 
   </style>
@@ -103,56 +211,94 @@
 
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="program.html">Program</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="readings.html">Readings</a>
-  </nav>
+  <!-- Navigation -->
 
-  <img src="Images/IMG_8927.jpeg" alt="Institute for Psychic Herbalism" class="hero-image">
+  <header class="site-header">
+    <div class="nav-container">
 
-  <div class="container">
+      <a href="index.html" class="logo-text">
+        Institute for Psychic Herbalism
+      </a>
 
-    <h1>Institute for Psychic Herbalism</h1>
-    
-<link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="favicon.png">
-    
-    <div class="subtitle">
-      A space for spiritual relationship with the intelligence of plant medicine.
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="readings.html">Readings</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main Content -->
+
+  <section class="container">
+
+    <div class="hero">
+
+      <h1>Institute for Psychic Herbalism</h1>
+
+      <!-- Logo -->
+
+      <img src="logo.jpg" alt="Institute for Psychic Herbalism Logo" class="logo-image">
+
+      <div class="subtitle">
+        A space for spiritual relationship with the intelligence of plant medicine.
+      </div>
+
     </div>
 
-    <p>
-      The Institute for Psychic Herbalism is devoted to the awakening of our innate spiritual wisdom and intuitive relationship with the natural world. While many systems of herbal education focus primarily on memorization and rote knowledge, this work invites students into direct experience.
-    </p>
+    <div class="content">
 
-    <p>
-      Beyond learning what a plant is used for, we ask deeper questions: Where does this wisdom originate? What intelligence lives within the plant itself? What message, medicine, or transformation is seeking relationship with you specifically?
-    </p>
+      <p>
+        The Institute for Psychic Herbalism is devoted to the awakening
+        of our innate spiritual wisdom and intuitive relationship with
+        the natural world. While many systems of herbal education focus
+        primarily on memorization and rote knowledge, this work invites
+        students into direct experience.
+      </p>
 
-    <p>
-      Through a precise, easeful, and repeatable method for spiritually communing with plant medicine, students learn to perceive the energetic and psychic dimensions of herbalism firsthand. These practices are paired with tools for energetic healing, intuitive development, embodiment, and deepening relationship with the living world.
-    </p>
+      <p>
+        Beyond learning what a plant is used for, we ask deeper questions:
+        Where does this wisdom originate? What intelligence lives within
+        the plant itself? What message, medicine, or transformation is
+        seeking relationship with you specifically?
+      </p>
 
-    <p>
-      The Institute for Psychic Herbalism exists as both a school and a sacred space — one devoted to healing, perception, spiritual remembrance, and the rediscovery of nature as an intelligent and living presence.
-    </p>
+      <p>
+        Through a precise, easeful, and repeatable method for spiritually
+        communing with plant medicine, students learn to perceive the energetic
+        and psychic dimensions of herbalism firsthand. These practices are paired
+        with tools for energetic healing, intuitive development, embodiment,
+        and deepening relationship with the living world.
+      </p>
 
-    <a class="button"
-       href="mailto:emily@instituteforpsychicherbalism.org">
-      Contact
-    </a>
+      <p>
+        The Institute for Psychic Herbalism exists as both a school and a sacred
+        space — one devoted to healing, perception, spiritual remembrance,
+        and the rediscovery of nature as an intelligent and living presence.
+      </p>
 
-    <div class="quote">
-      “The plants speak most clearly when we learn how to listen.”
+      <div class="button-container">
+
+        <a class="button"
+           href="mailto:emily@instituteforpsychicherbalism.org">
+          Contact
+        </a>
+
+      </div>
+
+      <div class="quote">
+        “The plants speak most clearly when we learn how to listen.”
+      </div>
+
     </div>
 
-  </div>
+  </section>
 
   <footer>
-    © Institute for Psychic Herbalism
+    © 2026 Institute for Psychic Herbalism
   </footer>
 
 </body>
