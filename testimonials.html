@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Testimonials | Institute for Psychic Herbalism</title>
 
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -17,33 +22,86 @@
       background-color: #f6f3ee;
       color: #2f2a26;
       line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
     }
+
+    /* NAVIGATION */
+
+    .site-header {
+      width: 100%;
+      background-color: rgba(246, 243, 238, 0.96);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .nav-container {
+      width: 90%;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      text-decoration: none;
+      color: #2f2a26;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #5d554e;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: opacity 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* MAIN LAYOUT */
 
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 80px 0;
+      padding: 100px 0 120px;
     }
 
     .hero {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 70px;
     }
 
     .hero h1 {
-      font-size: 3rem;
+      font-size: 3.4rem;
       font-weight: 400;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
       letter-spacing: 0.5px;
     }
 
     .hero p {
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto;
-      font-size: 1.05rem;
+      font-size: 1.12rem;
       color: #5d554e;
     }
+
+    /* VIDEO GRID */
 
     .video-grid {
       display: grid;
@@ -52,10 +110,10 @@
     }
 
     .video-card {
-      background: #ffffff;
-      border-radius: 18px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 24px;
       overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
       transition: transform 0.25s ease;
     }
 
@@ -81,7 +139,7 @@
     }
 
     .video-name {
-      padding: 18px 20px 22px;
+      padding: 20px 20px 24px;
       text-align: center;
       font-size: 1.05rem;
       color: #4a433d;
@@ -90,82 +148,49 @@
 
     footer {
       text-align: center;
-      padding: 50px 20px;
+      padding: 55px 20px;
       font-size: 0.95rem;
       color: #7a726c;
     }
 
-.site-header {
-  width: 100%;
-  background-color: #f6f3ee;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    /* MOBILE */
 
-.nav-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 22px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  text-decoration: none;
-  color: #2f2a26;
-  font-size: 1.1rem;
-  letter-spacing: 0.4px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 28px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #5d554e;
-  font-size: 1rem;
-  transition: opacity 0.2s ease;
-}
-
-.nav-links a:hover {
-  opacity: 0.65;
-}
     @media (max-width: 850px) {
+
       .video-grid {
         grid-template-columns: 1fr;
       }
-.nav-container {
-  flex-direction: column;
-  gap: 16px;
-}
 
-.nav-links {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
-  text-align: center;
-}
+      .nav-container {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 0;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+      }
+
       .hero h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
       }
 
       .container {
         width: 94%;
-        padding: 60px 0;
+        padding: 70px 0 90px;
       }
     }
+
   </style>
 </head>
 
 <body>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
+
   <header class="site-header">
     <div class="nav-container">
 
@@ -183,14 +208,19 @@
     </div>
   </header>
 
+  <!-- CONTENT -->
+
   <section class="container">
 
     <div class="hero">
+
       <h1>Student Testimonials</h1>
+
       <p>
         Conversations and reflections from students who have journeyed
         through psychic herbalism, intuition, embodiment, and healing work.
       </p>
+
     </div>
 
     <div class="video-grid">
