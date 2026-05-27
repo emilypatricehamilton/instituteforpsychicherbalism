@@ -90,24 +90,49 @@
       box-shadow: 0 14px 34px rgba(0,0,0,0.08);
     }
 
-    .hero {
-      text-align: center;
-      margin-bottom: 70px;
-    }
+   .hero-banner {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 90px;
+  overflow: hidden;
+}
 
-    .hero h1 {
-      font-size: 3.4rem;
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
+.hero-image {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+}
 
-    .subtitle {
-      max-width: 760px;
-      margin: 0 auto;
-      font-size: 1.12rem;
-      color: #5d554e;
-      font-style: italic;
-    }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.28);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-overlay h1 {
+  color: #f6f3ee;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 22px;
+}
+
+.hero-overlay p {
+  color: #f6f3ee;
+  font-size: 1.2rem;
+  max-width: 720px;
+  line-height: 1.7;
+  font-style: italic;
+}
 
     .content {
       max-width: 760px;
@@ -219,7 +244,21 @@
     /* MOBILE */
 
     @media (max-width: 850px) {
+.hero-banner {
+  margin-bottom: 60px;
+}
 
+.hero-image {
+  height: 480px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.6rem;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+}
       .nav-container {
         flex-direction: column;
         gap: 18px;
@@ -270,13 +309,24 @@
 
   <section class="container">
 
-    <img src="Images/mimosa.jpeg" class="hero-image" alt="Program">
+   <div class="hero-banner">
 
-    <div class="hero">
-      <h1>Psychic Herbalism</h1>
-      <div class="subtitle">
-        A 12-week immersion into energetic healing, spiritual perception, and plant consciousness.
-      </div>
+  <img src="Images/mimosa.jpeg"
+       alt="Psychic Herbalism Program"
+       class="hero-image">
+
+  <div class="hero-overlay">
+
+    <h1>Psychic Herbalism</h1>
+
+    <p>
+      A 12-week immersion into energetic healing,
+      spiritual perception, and plant consciousness.
+    </p>
+
+  </div>
+
+</div>
     </div>
 
     <div class="content">
